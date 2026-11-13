@@ -1,44 +1,41 @@
 "use client";
-import { useState } from "react";
+
+import Link from "next/link";
+import { useLang } from "./lang-provider";
+
+function Mark() {
+  return (
+    <span className="grid h-14 w-14 place-items-center rounded-2xl bg-brand-600 text-white" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round">
+        <path d="M12 5v14M5 12h14" />
+      </svg>
+    </span>
+  );
+}
 
 export default function Home() {
-  const [code, setCode] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleClaim = () => {
-    if (!code.trim()) {
-      setMessage("Please enter your code first");
-      return;
-    }
-    setMessage("Code " + code + " claimed successfully! 🎉");
-    setCode("");
-  };
-
+  const { t } = useLang();
   return (
-    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-6">
-      <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center">
-        Claim Code
-      </h1>
-      <p className="text-gray-400 mb-8 text-center">
-        Enter your code below to claim your reward
-      </p>
+    <main className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center px-6 pb-16">
+      <div className="w-full max-w-md text-center">
+        <div className="mb-6 flex justify-center"><Mark /></div>
+        <h1 className="text-4xl font-bold">{t("brand")}</h1>
+        <p className="mt-3 text-base text-brand-900/70">{t("homeSub")}</p>
 
-      <div className="w-full max-w-md bg-zinc-900 p-6 rounded-2xl border border-zinc-800">
-        <input
-          value={code}
-          onChange={(e) => setCode(e.target.value)}
-          placeholder="Enter your code"
-          className="w-full p-4 rounded-xl bg-black border border-zinc-700 outline-none mb-4 text-center text-lg uppercase"
-        />
-        <button
-          onClick={handleClaim}
-          className="w-full bg-white text-black font-bold p-4 rounded-xl hover:bg-gray-200"
-        >
-          Claim Now
-        </button>
-        {message && (
-          <p className="text-center mt-4 text-green-400">{message}</p>
-        )}
+        <div className="mt-10 flex flex-col gap-3">
+          <Link
+            href="/doctor-login"
+            className="rounded-xl bg-brand-600 px-6 py-4 text-lg font-medium text-white transition hover:bg-brand-700"
+          >
+            {t("doctorLogin")}
+          </Link>
+          <Link
+            href="/claims"
+            className="rounded-xl border border-brand-100 bg-brand-50 px-6 py-4 text-lg font-medium text-brand-700 transition hover:bg-brand-100"
+          >
+            {t("claimsDash")}
+          </Link>
+        </div>
       </div>
     </main>
   );
