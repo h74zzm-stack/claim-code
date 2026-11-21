@@ -1,6 +1,6 @@
 export const DICT = {
   ar: {
-    brand: "كودك", langBtn: "English", langAria: "Switch to English",
+        brand: "Claim Code", langBtn: "العربية", langAria: "التبديل إلى العربية",
     home: "الرئيسية", demo: "بيانات تجريبية للعرض فقط، وليست مربوطة بأي نظام فعلي.", sar: "ر.س",
     // الرئيسية
     homeSub: "سجّل دخولك كطبيب، أو تابع مطالباتك من لوحة واحدة.",
