@@ -2,7 +2,7 @@ import { getClaim } from "../data";
 import Details from "./details";
 
 export function generateMetadata({ params }) {
-  return { title: `${params.id} | كودك | Kodak` };
+    return { title: `${params.id} | كلايم كود | Claim Code` };
 }
 
 export default function ClaimPage({ params }) {
