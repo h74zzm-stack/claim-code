@@ -12,8 +12,8 @@ const font = IBM_Plex_Sans_Arabic({
 });
 
 export const metadata = {
-  title: "كودك | Kodak",
-  description: "كودك: منصة للأطباء ولوحة المطالبات | Kodak: doctor portal and claims dashboard",
+  title: "كلايم كود | Claim Code",
+  description: "كلايم كود: منصة للأطباء ولوحة المطالبات | Claim Code: doctor portal and claims dashboard",
 };
 
 export default function RootLayout({ children }) {
