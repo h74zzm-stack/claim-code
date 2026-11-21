@@ -63,8 +63,7 @@ export const DICT = {
     chartTitle: "المبلغ المسترد يومياً (ريال)", chartAria: "رسم بياني للمبلغ المسترد يومياً",
     dayTip: "{d} نوفمبر: {n} ريال", topDay: "أعلى يوم: {n} ريال. الجمعة والسبت (6 و7) بدون مطالبات.",
   },
-  en: {
-    brand: "Kodak", langBtn: "العربية", langAria: "التبديل إلى العربية",
+    brand: "Kodak", langBtn: "العربية", langAria: "التبديل إلى العربية",    brand: "Kodak", langBtn: "العربية", langAria: "التبديل إلى العربية",
     home: "Home", demo: "Demo data for display only. Not connected to any real system.", sar: "SAR",
     homeSub: "Sign in as a doctor, or track your claims from a single dashboard.",
     doctorLogin: "Doctor Login", claimsDash: "Claims Dashboard",
