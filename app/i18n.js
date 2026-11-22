@@ -1,7 +1,7 @@
 export const DICT = {
   ar: {
         brand: "كلايم كود", langBtn: "English", langAria: "Switch to English",
-    home: "الرئيسية", demo: "بيانات تجريبية للعرض فقط، وليست مربوطة بأي نظام فعلي.", sar: "ر.س",
+    home:  codingNotice: "بيانات تجريبية. الأكواد للتوضيح فقط وغير معتمدة وفق معايير الترميز الصحي السعودي (SBS) أو منظومة نفيس (NPHIES).",
     // الرئيسية
     homeSub: "سجّل دخولك كطبيب، أو تابع مطالباتك من لوحة واحدة.",
     doctorLogin: "دخول الطبيب", claimsDash: "لوحة المطالبات",
