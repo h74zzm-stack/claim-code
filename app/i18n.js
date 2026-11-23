@@ -1,7 +1,8 @@
 export const DICT = {
   ar: {
-        brand: "كلايم كود", langBtn: "English", langAria: "Switch to English",
-    home:  codingNotice: "بيانات تجريبية. الأكواد للتوضيح فقط وغير معتمدة وفق معايير الترميز الصحي السعودي (SBS) أو منظومة نفيس (NPHIES).",
+    brand: "كلايم كود", langBtn: "English", langAria: "Switch to English",
+    home: "الرئيسية", demo: "بيانات تجريبية للعرض فقط، وليست مربوطة بأي نظام فعلي.", sar: "ر.س",
+    codingNotice: "بيانات تجريبية. الأكواد للتوضيح فقط وغير معتمدة وفق معايير الترميز الصحي السعودي (SBS) أو منظومة نفيس (NPHIES).",
     // الرئيسية
     homeSub: "سجّل دخولك كطبيب، أو تابع مطالباتك من لوحة واحدة.",
     doctorLogin: "دخول الطبيب", claimsDash: "لوحة المطالبات",
@@ -62,11 +63,11 @@ export const DICT = {
     rateNote: "الأخضر للمقبولة والأحمر الفاتح للمرفوضة.", rateAria: "نسبة القبول {n}%",
     chartTitle: "المبلغ المسترد يومياً (ريال)", chartAria: "رسم بياني للمبلغ المسترد يومياً",
     dayTip: "{d} نوفمبر: {n} ريال", topDay: "أعلى يوم: {n} ريال. الجمعة والسبت (6 و7) بدون مطالبات.",
-    },
+  },
   en: {
     brand: "Claim Code", langBtn: "العربية", langAria: "التبديل إلى العربية",
-        brand: "Claim Code", langBtn: "العربية", langAria: "التبديل إلى العربية",   
     home: "Home", demo: "Demo data for display only. Not connected to any real system.", sar: "SAR",
+    codingNotice: "Demo data. Codes are illustrative and not validated against Saudi Health Coding Standards (SBS) or NPHIES.",
     homeSub: "Sign in as a doctor, or track your claims from a single dashboard.",
     doctorLogin: "Doctor Login", claimsDash: "Claims Dashboard",
     dlSub: "Write the report in Arabic or English and convert it into medical codes.",
