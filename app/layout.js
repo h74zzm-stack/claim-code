@@ -22,8 +22,16 @@ export default function RootLayout({ children }) {
     <html lang={lang} dir={lang === "ar" ? "rtl" : "ltr"} className={font.variable}>
       <body className="font-sans min-h-screen">
         <LangProvider initial={lang}>
-          <TopBar />
-          {children}
+                    <div className="flex min-h-screen flex-col">
+            <TopBar />
+            <div className="page-shell flex flex-1 flex-col">{children}</div>
+            <Footer />
+          </div>
+                    <div className="flex min-h-screen flex-col">
+            <TopBar />
+            <div className="page-shell flex flex-1 flex-col">{children}</div>
+            <Footer />
+          </div>
         </LangProvider>
       </body>
     </html>
