@@ -4,3 +4,4 @@
 
 body { @apply bg-white text-brand-900 antialiased; }
 :focus-visible { @apply outline-2 outline-offset-2 outline-brand-600; }
+.page-shell > main { width: 100%; min-height: 0; flex: 1 1 auto; }
