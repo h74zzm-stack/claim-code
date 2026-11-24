@@ -2,8 +2,6 @@
 
 import { useLang } from "./lang-provider";
 
-// التذييل يعرض مفتاح codingNotice من i18n.js. عند اعتماد الأكواد فعلياً وربط نفيس
-// غيّر النص هناك فقط (في اللغتين) وسيتحدث في كل الصفحات.
 export default function Footer() {
   const { t } = useLang();
   return (
