@@ -1,9 +1,9 @@
-
 import "./globals.css";
 import { cookies } from "next/headers";
 import { IBM_Plex_Sans_Arabic } from "next/font/google";
 import { LangProvider } from "./lang-provider";
 import TopBar from "./top-bar";
+import Footer from "./footer";
 
 const font = IBM_Plex_Sans_Arabic({
   subsets: ["arabic", "latin"],
@@ -20,14 +20,9 @@ export default function RootLayout({ children }) {
   const lang = cookies().get("lang")?.value === "en" ? "en" : "ar";
   return (
     <html lang={lang} dir={lang === "ar" ? "rtl" : "ltr"} className={font.variable}>
-      <body className="font-sans min-h-screen">
+      <body className="font-sans">
         <LangProvider initial={lang}>
-                    <div className="flex min-h-screen flex-col">
-            <TopBar />
-            <div className="page-shell flex flex-1 flex-col">{children}</div>
-            <Footer />
-          </div>
-                    <div className="flex min-h-screen flex-col">
+          <div className="flex min-h-screen flex-col">
             <TopBar />
             <div className="page-shell flex flex-1 flex-col">{children}</div>
             <Footer />
